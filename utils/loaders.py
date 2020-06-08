@@ -138,6 +138,7 @@ def load_model(model_class, folder):
     model = model_class(*params)
 
     model.load_weights(os.path.join(folder, 'weights/weights.h5'))
+    #model.load_weights(os.path.join(folder, 'weights','weights.h5'))
 
     return model
 

@@ -208,6 +208,8 @@ class VariationalAutoencoder():
             , initial_epoch = initial_epoch
             , callbacks = callbacks_list
         )
+        
+
 
 
 
