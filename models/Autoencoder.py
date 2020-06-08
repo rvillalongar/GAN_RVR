@@ -1,7 +1,10 @@
 # Libreria la cual genera autoencoders,
 # segun la configuracion de la red conv que uno esta entregando
 # Un autoencoder corresponde a 2 modelos conectados que son espejos 
-# en su configuracion
+# en su configuracion por ende la candidad de parametros de entrada 
+# debe ser la misma cantidad de parametros de salida
+# no necesariamente deben ser las mismas cantidad de layers
+
 
 from tensorflow.keras.layers import Input, Flatten, Dense, Conv2DTranspose, Reshape, Lambda, Activation, BatchNormalization, LeakyReLU, Dropout, Conv2D
 from tensorflow.keras.models import Model
