@@ -227,12 +227,13 @@ class VariationalAutoencoder():
         self.model.save_weights(os.path.join(run_folder, 'weights/weights.h5'))
                 
         self.model.fit_generator(
+        #self.model.fit(   
             data_flow
             , shuffle = True
             , epochs = epochs
             , initial_epoch = initial_epoch
             , callbacks = callbacks_list
-            , steps_per_epoch=steps_per_epoch 
+            , steps_per_epoch=steps_per_epoch
             )
 
 
