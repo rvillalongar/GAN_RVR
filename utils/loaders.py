@@ -53,8 +53,6 @@ class ImageLabelLoader():
         return data_flow
 
 
-
-
 class DataLoader():
     def __init__(self, dataset_name, img_res=(256, 256)):
         self.dataset_name = dataset_name
@@ -126,8 +124,6 @@ class DataLoader():
 
     def imread(self, path):
         return scipy.misc.imread(path, mode='RGB').astype(np.float)
-
-
 
 
 def load_model(model_class, folder):
